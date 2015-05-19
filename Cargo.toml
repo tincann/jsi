@@ -1,0 +1,8 @@
+[package]
+name = "jsc"
+version = "0.1.0"
+authors = ["tincann <saabnl@gmail.com>"]
+
+[dependencies]
+regex = "0.1.30"
+lazy_static = "0.1.10"
