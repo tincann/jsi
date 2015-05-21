@@ -5,4 +5,5 @@ authors = ["tincann <saabnl@gmail.com>"]
 
 [dependencies]
 regex = "0.1.30"
+regex_macros = "0.1.17"
 lazy_static = "0.1.10"

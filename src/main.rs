@@ -1,19 +1,17 @@
-use std::io;
-
-mod lexer;
+#![feature(plugin)]
+#![plugin(regex_macros)]
+extern crate regex;
 
 #[macro_use]
 extern crate lazy_static;
 
-#[feature(plugins)]
-#[plugin(regex_macros)]
-extern crate regex;
-
+mod lexer;
 
 fn main() {
+    let mut reader = std::io::stdin();
     loop{
         let line = &mut String::new();
-        let _ = std::io::stdin().read_line(line);
+        let _ = reader.read_line(line);
         lexer::lex_input(line);
         println!("{:?}", line);
     }
