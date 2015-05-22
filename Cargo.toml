@@ -7,3 +7,4 @@ authors = ["tincann <saabnl@gmail.com>"]
 regex = "0.1.30"
 regex_macros = "0.1.17"
 lazy_static = "0.1.10"
+phf = "0.7.3"

@@ -10,9 +10,9 @@ mod lexer;
 fn main() {
     let mut reader = std::io::stdin();
     loop{
-        let line = &mut String::new();
-        let _ = reader.read_line(line);
-        lexer::lex_input(line);
+        let mut line = String::new();
+        let _ = reader.read_line(&mut line);
+        lexer::lex_input(&line);
         println!("{:?}", line);
     }
 }
